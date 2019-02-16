@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Dancing Script', cursive;
   line-height: 1.4;
 }
 
@@ -32,7 +32,17 @@ p {
 }
 
 .text-primary {
+  color: #61dbd5;
+}
+
+.bg-light {
+  background: #f4f4f4;
   color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff; 
 }
 
 .l-heading {
@@ -56,6 +66,10 @@ p {
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
 
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
 .btn {
   display: inline-block;
   color: #fff;
@@ -72,6 +86,16 @@ p {
 .btn-dark {
   background: #333;
   color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
 }
 
 /* Navbar */
@@ -124,7 +148,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4)
+  background-color: rgba(0, 0, 0, 0.5)
 }
 
 /* Section: Our Story */
@@ -147,3 +171,15 @@ p {
   margin-bottom: 1rem;
 }
 
+/* Section : Who We Are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url('../img/Screenshot_20190215-185547.png') no-repeat center center/cover;
+}
