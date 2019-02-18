@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Satisfy', cursive;
   line-height: 1.4;
 }
 
@@ -43,6 +43,11 @@ p {
 .bg-dark {
   background: #333;
   color: #fff; 
+}
+
+.bg-primary {
+  background: #61dbd5;
+  color: #fff;
 }
 
 .l-heading {
@@ -144,7 +149,7 @@ p {
   padding: 0 2rem;
   /* Overlay */
   position: absolute;
-  top: 66px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -181,5 +186,40 @@ p {
 }
 
 #who .who-img {
-  background: url('../img/Screenshot_20190215-185547.png') no-repeat center center/cover;
+  background: url('../img/christmas.png') no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, .05)
+}
+
+/* Section: Creations */
+#creations .items {
+  display: flex;
+}
+
+#creations .items img {
+  display: block;
+  margin: auto;
+  width: 90%
+}
+
+/* Secion: Contact */
+#contact {
+  display: flex;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
